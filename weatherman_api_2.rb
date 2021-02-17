@@ -1,3 +1,5 @@
+# Weather Script 
+
 require 'HTTParty'
 
 def get_weather(city, country)
