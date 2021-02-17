@@ -1,4 +1,4 @@
-# Weather Script 
+# Weather Script
 
 require 'HTTParty'
 
@@ -11,7 +11,7 @@ def get_weather(city, country)
     # weather_data.main.feels_like
 
     base_url = "https://api.openweathermap.org/data/2.5/weather"
-    auth = "&appid=3d463c9daaa41cb06fbca5a174d1cfbf"
+    auth = "&appid="
     filter_params = 'q=London,UK&units=imperial'
     resp = HTTParty.get(base_url + '?' + filter_params + '&' + auth)
     data = JSON.parse(resp.body)
